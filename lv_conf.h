@@ -635,6 +635,13 @@
     #endif
 #endif
 
+/*Tiny TrueType font decoder*/
+#define LV_USE_TINY_TTF 1
+#if LV_USE_TINY_TTF
+    /*Use in-memory embedded TTF data (no file-system dependency required).*/
+    #define LV_TINY_TTF_FILE_SUPPORT 0
+#endif
+
 /*Rlottie library*/
 #define LV_USE_RLOTTIE 0
 
